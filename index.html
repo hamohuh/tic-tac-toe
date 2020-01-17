@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="home">
+            <p>Tic Tac Toe</p>
+            <div id="select-players-div">
+                <p>Select Game enemies</p>
+                <select id="select-player">
+                    <option id="p-vs-c" value="1" selected>Player vs CPU</option>
+                    <option id="p-vs-p" value="2">Player vs Player</option>
+                </select>
+            </div>
+            <div id="users">
+                <div id="p1-name-div">Player 1 Name: <input type="text" id="p1-name-input" value=""></div id="p1-name-div">
+                <div id="p2-name-div">Player 2 Name: <input type="text" id="p2-name-input" value=""></div id="p2-name-div">
+            </div>
+            <div id="difficulty">
+                <select>
+                    <option value="0">Normal</option>
+                    <option value="1">Hard</option>
+                    <option value="2">Impossible</option>
+                </select>
+            </div>
+            <button id="start-button">Start</button>
+        </div>
+
+        <div id="game-screen">
+            <button id="back-button"><</button>
+            <div id="players-screen">
+                <P id="p1-marker">X</P><p id="p1-name"></p>
+                <p id="p2-marker">O</p><p id="p2-name"></p>
+            </div>
+            <div id="game-board">
+                <table>
+                    <tr id="row1">
+                        <td class="cell" id="0"></td>
+                        <td class="cell" id="1"></td>
+                        <td class="cell" id="2"></td>
+                    </tr>
+                    <tr id="row2">
+                        <td class="cell" id="4"></td>
+                        <td class="cell" id="5"></td>
+                        <td class="cell" id="6"></td>
+                    </tr>
+                    <tr id="row3">
+                        <td class="cell" id="7"></td>
+                        <td class="cell" id="8"></td>
+                        <td class="cell" id="9"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
