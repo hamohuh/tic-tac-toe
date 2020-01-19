@@ -1,11 +1,11 @@
 body{
-    background-image: url(images/2.jpg);
+    background-image: url("images/2.jpg");
     background-size:     cover;                 
     background-repeat:   no-repeat;
     background-position: center center;  
 }
 #home{
-    background-image: url(images/2.png);
+    background-image: url("images/2.png");
     background-size: 700px 580px;
     width: 700px;
     height: 580px;
@@ -106,7 +106,7 @@ body{
 
 
 #game-screen{
-    background-image: url(images/2.png);
+    background-image: url("images/2.png");
     background-size: 700px 580px;
     width: 700px;
     height: 580px;
