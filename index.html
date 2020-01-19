@@ -7,20 +7,19 @@
     </head>
     <body>
         <div id="home">
-            <p>Tic Tac Toe</p>
+            <p id="game-title">Tic Tac Toe</p>
             <div id="select-players-div">
-                <p>Select Game enemies</p>
-                <select id="select-player">
-                    <option id="p-vs-c" value="1" selected>Player vs CPU</option>
-                    <option id="p-vs-p" value="2">Player vs Player</option>
+                <span>Select Game Players  </span><select id="select-player">
+                    <option id="p-vs-c" value="1" selected>Player vs Player</option>
+                    <option id="p-vs-p" value="2">Player vs CPU</option>
                 </select>
             </div>
             <div id="users">
-                <div id="p1-name-div">Player 1 Name: <input type="text" id="p1-name-input" value=""></div id="p1-name-div">
-                <div id="p2-name-div">Player 2 Name: <input type="text" id="p2-name-input" value=""></div id="p2-name-div">
+                <div id="p1-name-div">Player 1 Name:<input type="text" id="p1-name-input" placeholder="Player 1" value=""></div id="p1-name-div">
+                <div id="p2-name-div">Player 2 Name:<input type="text" id="p2-name-input" placeholder="Player 2" value=""></div id="p2-name-div">
             </div>
             <div id="difficulty">
-                <select>
+                <span>Select  Difficulty</span><select>
                     <option value="0">Normal</option>
                     <option value="1">Hard</option>
                     <option value="2">Impossible</option>
@@ -30,10 +29,11 @@
         </div>
 
         <div id="game-screen">
-            <button id="back-button"><</button>
+            <button id="back-button"><<</button>
             <div id="players-screen">
-                <P id="p1-marker">X</P><p id="p1-name"></p>
-                <p id="p2-marker">O</p><p id="p2-name"></p>
+                <span><P id="p1-marker">X </P><p id="p1-name"></p></span>
+                <span><p id="turn"></p></span>
+                <span><p  id="p2-marker">O </p><p id="p2-name"></p></span>
             </div>
             <div id="game-board">
                 <table>

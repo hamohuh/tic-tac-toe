@@ -1,35 +1,190 @@
+body{
+    background-image: url(images/2.jpg);
+    background-size:     cover;                 
+    background-repeat:   no-repeat;
+    background-position: center center;  
+}
 #home{
-    border: 1px solid black;
-    width: 500px;
-    height: 500px;
+    background-image: url(images/2.png);
+    background-size: 700px 580px;
+    width: 700px;
+    height: 580px;
     margin: auto;
 }
 
+#game-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 85px;
+    text-shadow: 0 0 2px rgb(255, 101, 101);
+}
+
+#select-players-div{
+    padding-left: 100px;
+    padding-bottom: 25px;
+}
+
+
+#select-players-div select{
+    border: none;
+    padding: 10px;
+    background-color: rgba(41, 36, 36, 0.767);
+    color: white;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 10px;
+}
+
+#select-players-div span{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0 0 2px rgb(255, 101, 101);
+}
+
+#users{
+    padding-left: 100px;
+    height: 100px;
+}
+#users div{
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0 0 2px rgb(255, 101, 101);
+}
+#users input{
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 30px;
+    background-color: rgba(41, 36, 36, 0.767);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+#users input:hover{
+    box-shadow: 0 0 5px rgb(255, 101, 101);
+}
+
+#difficulty{
+    padding-left: 100px;
+    padding-bottom: 25px;
+}
+
+#difficulty select{
+    border: none;
+    padding: 10px;
+    background-color: rgba(41, 36, 36, 0.767);
+    color: white;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 20px;
+}
+
+#difficulty span{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0 0 2px rgb(255, 101, 101);
+}
+
+#start-button{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(41, 36, 36, 0.767);
+    color: white;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 300px;
+}
+
+#start-button:hover{
+    background-color: rgba(36, 29, 29, 0.767);
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(255, 101, 101);
+}
+
+
 #game-screen{
-    border: 1px solid black;
-    width: 500px;
-    height: 500px;
+    background-image: url(images/2.png);
+    background-size: 700px 580px;
+    width: 700px;
+    height: 580px;
     margin: auto;
+    display: none;
+}
+
+
+#game-screen button{
+    position: relative;
+    left: -50px;
+    top: 0px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(168, 31, 31, 0.767);
+    color: white;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#game-screen button:hover{
+    background-color: rgba(36, 29, 29, 0.767);
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(255, 101, 101);
+}
+#players-screen{
+    position: relative;
+    right: 150px;
+    top: 100px;
+    float: right;
+    background-color:white;
+    right: 104px;
+}
+#players-screen p{
+    display: inline;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0 0 2px rgb(255, 101, 101);
+
+}
+#p1-marker{
+    padding-left: 6px;
+    border-radius: 50%;
+    background-color: rgb(32, 189, 189);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    font-size: 60px;
+    margin-right: 10px;
+}
+#p2-marker{
+    padding-left: 6px;
+    border-radius: 50%;
+    background-color: rgb(32, 189, 189);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    font-size: 60px;
+    margin-right: 10px;
+
+}
+
+#players-screen span{
+    margin-left: 50px;
 }
 
 table{
-    background-color: aqua;
     width: 300px;
     height: 300px;
     margin: auto;
+    margin-top: 120px;
+    
 }
 td{
     background-color:white;
     width: 95px;
     height: 100px;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 0 0 2px rgb(255, 101, 101);
+    box-shadow: 0 0 15px rgb(255, 101, 101);
 }
 
-#p2-name-div{
-    display: none;
-}
-
-#game-screen{
-    display: none;
-}
